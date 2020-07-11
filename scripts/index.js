@@ -20,7 +20,7 @@ document.querySelector('.start').addEventListener('click', start);
 
 function stop() {
 	"use strict";
-    animation.pause();
+    animation.goToAndStop(0);
 	document.getElementById("stopbtn").style.display = "none";
 	document.getElementById("playbtn").style.display = "inline";
 }
